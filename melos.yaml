@@ -31,15 +31,15 @@ scripts:
     description: Run `flutter analyze` in all packages.
 
   analyze:changes:
-    run: melos exec -c 1 --diff=origin/main...HEAD -- "flutter analyze . --no-congratulate"
+    run: melos exec --diff=origin/main...HEAD -c 1  -- "flutter analyze . --no-congratulate"
     description: Run `flutter analyze` in all changed packages.
 
   test:
-    run: melos exec -c 1 --dir-exists=test -- "flutter test --no-pub --coverage"
+    run: melos exec --dir-exists=test -c 1 -- "flutter test --no-pub --coverage"
     description: Run `flutter test` in all packages.
 
   test:changes:
-    run: melos exec -c 1 --dir-exists=test --diff=origin/main...HEAD -- "flutter test --no-pub --coverage"
+    run: melos exec --dir-exists=test --diff=origin/main...HEAD -c 1 -- "flutter test --no-pub --coverage"
     description: Run `flutter test` in all changed packages.
 
   format:
@@ -47,5 +47,5 @@ scripts:
     description: Run `flutter format` in all packages.
 
   format:changes:
-    run: melos exec -c 1 --diff=origin/main...HEAD -- "dart format . --set-exit-if-changed"
+    run: melos exec --diff=origin/main...HEAD -c 1 -- "dart format . --set-exit-if-changed"
     description: Run `flutter format` in all changed packages.
