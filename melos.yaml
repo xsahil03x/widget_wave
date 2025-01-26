@@ -2,13 +2,16 @@ name: widget_wave
 repository: https://github.com/xsahil03x/widget_wave
 
 packages:
-  - packages/**
+  - packages/flutter_svg_icon
 
 command:
   bootstrap:
     environment:
       sdk: ^3.5.0
       flutter: ">=3.24.0"
+
+    dependencies:
+      flutter_svg: ^2.0.17
 
     dev_dependencies:
       flutter_lints: ^4.0.0
@@ -17,6 +20,10 @@ command:
     branch: main
     linkToCommits: true
     workspaceChangelog: true
+
+  clean:
+    hooks:
+      post: melos exec -c 1 --flutter -- "flutter clean"
 
 scripts:
   analyze:

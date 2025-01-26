@@ -1,0 +1,29 @@
+name: flutter_svg_icon_example
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg_icon:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    # Regular svg icons.
+    - assets/ic_back.svg
+    - assets/ic_heart.svg
+    - assets/ic_settings.svg
+    # Complex svg icons with multiple colors.
+    - assets/ic_crab.svg
+    - assets/ic_dinosaur.svg
+    - assets/ic_rabbit.svg
+    - assets/ic_raccoon.svg

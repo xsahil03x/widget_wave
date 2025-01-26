@@ -15,6 +15,8 @@ jobs:
     name: 🐦 Build and Test
     runs-on: ubuntu-latest
     strategy:
+      # Run all jobs even if one fails
+      fail-fast: false
       matrix:
         flutter-version:
           # The version of Flutter to use should use the minimum Dart SDK version supported by the package,
@@ -40,10 +42,10 @@ jobs:
           run: melos bootstrap
 
         - name: ✨ Check Formatting
-          run: melos run format:changes
+          run: melos run format
 
         - name: 🕵️ Analyze
-          run: melos run analyze:changes
+          run: melos run analyze
 
         - name: 🧪 Run Tests
-          run: melos run test:changes
+          run: melos run test
