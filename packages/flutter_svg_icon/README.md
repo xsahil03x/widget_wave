@@ -65,7 +65,7 @@ For these cases, you can use the `preserveColors` property:
 
 ```dart
 const reactionLol = SvgIconData(
-  'assets/ic_reaction_lol.svg'
+  'assets/ic_reaction_lol.svg',
    preserveColors: true, // Preserve original colors
 );
 ```
