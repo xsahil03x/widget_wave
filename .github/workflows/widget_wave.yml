@@ -15,11 +15,9 @@ jobs:
     name: 🐦 Build and Test
     runs-on: ubuntu-latest
     strategy:
+      # Run all jobs even if one fails
+      fail-fast: false
       matrix:
-    strategy:
-      fail-fast: false  # Run all jobs even if one fails
-      matrix:
-        flutter-version:
         flutter-version:
           # The version of Flutter to use should use the minimum Dart SDK version supported by the package,
           # refer to https://docs.flutter.dev/development/tools/sdk/releases.
