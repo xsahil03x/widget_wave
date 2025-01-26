@@ -12,6 +12,8 @@ on:
 
 jobs:
   build:
+    name: 🐦 Build and Test
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         flutter-version:
@@ -19,9 +21,7 @@ jobs:
           # refer to https://docs.flutter.dev/development/tools/sdk/releases.
           - "3.24.0"
           - "3.x"
-      name: 🐦 Build and Test
-      runs-on: ubuntu-latest
-      steps:
+    steps:
         - name: 📚 Git Checkout
           uses: actions/checkout@v4
 
