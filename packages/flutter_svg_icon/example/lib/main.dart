@@ -11,95 +11,135 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      title: 'SVG Icon Showcase',
+      theme: ThemeData(colorSchemeSeed: Colors.teal),
+      home: const SvgIconShowcase(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+class SvgIconShowcase extends StatelessWidget {
+  const SvgIconShowcase({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(title),
+        title: const Text('SVG Icon Showcase'),
+        leading: IconButton(
+          color: Colors.green,
+          icon: const SvgIcon(MySvgIcons.back),
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            color: Colors.blue,
+            icon: const SvgIcon(MySvgIcons.settings),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            IconButton(
-              onPressed: () {},
-              color: Colors.red,
-              icon: SvgIcon(SvgIcons.reactionLol),
-            ),
-            IconButton(
-              onPressed: () {},
-              color: Colors.green,
-              icon: SvgIcon(SvgIcons.reactionLove),
-            ),
-            IconButton(
-              onPressed: () {},
-              color: Colors.blue,
-              icon: SvgIcon(SvgIcons.reactionThumbsDown),
-            ),
-            IconButton(
-              onPressed: () {},
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            // Simple SvgIcon with default styling
+            const SvgIcon(MySvgIcons.heart),
+
+            // Customized SvgIcon with size and color
+            const SvgIcon(
+              MySvgIcons.heart,
+              size: 48.0,
               color: Colors.orange,
-              icon: SvgIcon(SvgIcons.reactionThumbsUp),
             ),
+
+            // Icon button with SvgIcon
             IconButton(
+              color: Colors.pink,
+              icon: const SvgIcon(MySvgIcons.heart),
               onPressed: () {},
-              color: Colors.purple,
-              icon: SvgIcon(SvgIcons.reactionWut),
+            ),
+
+            // Outlined button with SvgIcon
+            OutlinedButton.icon(
+              label: const Text('Go Back'),
+              icon: const SvgIcon(
+                size: 24.0,
+                MySvgIcons.back,
+                color: Colors.purple,
+              ),
+              onPressed: () {},
+            ),
+
+            // Complex svg icons with multiple colors.
+            ...[
+              const SvgIcon(MySvgIcons.crab, size: 72.0),
+              const SvgIcon(MySvgIcons.dinosaur, size: 72.0),
+              const SvgIcon(MySvgIcons.rabbit, size: 72.0),
+              const SvgIcon(MySvgIcons.raccoon, size: 72.0),
+            ].map(
+              (icon) => IconButton(
+                icon: icon,
+                color: Colors.teal,
+                onPressed: () {},
+              ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const SvgIcon(
+          MySvgIcons.heart,
+          color: Colors.white,
         ),
       ),
     );
   }
 }
 
-/// Identifiers for the supported Stream SVG icons.
+/// Identifiers for the supported SVG icons.
 ///
 /// Use with the [SvgIcon] class to show specific icons. Icons are
-/// identified by their name as listed below, e.g. [SvgIcons.reactionLol].
-abstract final class SvgIcons {
-  // Some simple SVG icons.
+/// identified by their name as listed below, e.g. [MySvgIcons.reactionLol].
+abstract final class MySvgIcons {
+  // Regular svg icons.
 
-  /// SVG icon named 'reaction_lol'.
-  static const SvgIconData reactionLol = SvgIconData(
-    'assets/ic_reaction_lol.svg',
+  /// SVG icon named 'back'.
+  static const SvgIconData back = SvgIconData('assets/ic_back.svg');
+
+  /// SVG icon named 'heart'.
+  static const SvgIconData heart = SvgIconData('assets/ic_heart.svg');
+
+  /// SVG icon named 'settings'.
+  static const SvgIconData settings = SvgIconData('assets/ic_settings.svg');
+
+  // Complex svg icons with multiple colors.
+  //
+  // Note: We are using preserveColors: true in the SvgIconData to preserve the
+  // original predefined colors of the icons.
+
+  /// SVG icon named 'crab'.
+  static const SvgIconData crab = SvgIconData(
+    'assets/ic_crab.svg',
+    preserveColors: true,
   );
 
-  /// SVG icon named 'reaction_love'.
-  static const SvgIconData reactionLove = SvgIconData(
-    'assets/ic_reaction_love.svg',
+  /// SVG icon named 'dinosaur'.
+  static const SvgIconData dinosaur = SvgIconData(
+    'assets/ic_dinosaur.svg',
+    preserveColors: true,
   );
 
-  /// SVG icon named 'reaction_thumbs_down'.
-  static const SvgIconData reactionThumbsDown = SvgIconData(
-    'assets/ic_reaction_thumbs_down.svg',
+  /// SVG icon named 'rabbit'.
+  static const SvgIconData rabbit = SvgIconData(
+    'assets/ic_rabbit.svg',
+    preserveColors: true,
   );
 
-  /// SVG icon named 'reaction_thumbs_up'.
-  static const SvgIconData reactionThumbsUp = SvgIconData(
-    'assets/ic_reaction_thumbs_up.svg',
+  /// SVG icon named 'raccoon'.
+  static const SvgIconData raccoon = SvgIconData(
+    'assets/ic_raccoon.svg',
+    preserveColors: true,
   );
-
-  /// SVG icon named 'reaction_wut'.
-  static const SvgIconData reactionWut = SvgIconData(
-    'assets/ic_reaction_wut.svg',
-  );
-
-  // Some complex SVG icons with predefined colors.
 }

@@ -25,7 +25,6 @@ command:
     hooks:
       post: melos exec -c 1 --flutter -- "flutter clean"
 
-
 scripts:
   analyze:
     run: melos exec -c 1 -- "flutter analyze . --no-congratulate"

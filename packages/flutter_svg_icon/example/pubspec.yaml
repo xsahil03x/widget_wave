@@ -18,8 +18,12 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/ic_reaction_lol.svg
-    - assets/ic_reaction_love.svg
-    - assets/ic_reaction_thumbs_down.svg
-    - assets/ic_reaction_thumbs_up.svg
-    - assets/ic_reaction_wut.svg
+    # Regular svg icons.
+    - assets/ic_back.svg
+    - assets/ic_heart.svg
+    - assets/ic_settings.svg
+    # Complex svg icons with multiple colors.
+    - assets/ic_crab.svg
+    - assets/ic_dinosaur.svg
+    - assets/ic_rabbit.svg
+    - assets/ic_raccoon.svg
