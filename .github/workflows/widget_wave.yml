@@ -26,6 +26,8 @@ jobs:
     steps:
         - name: 📚 Git Checkout
           uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
 
         - name: 🎯 Setup Flutter
           uses: subosito/flutter-action@v2
@@ -42,10 +44,16 @@ jobs:
           run: melos bootstrap
 
         - name: ✨ Check Formatting
-          run: melos run format
+          run: melos run format:changes
 
         - name: 🕵️ Analyze
-          run: melos run analyze
+          run: melos run analyze:changes
 
         - name: 🧪 Run Tests
-          run: melos run test
+          run: melos run test:changes
+
+        - name: 📁 Upload Coverage
+          uses: codecov/codecov-action@v5
+          with:
+            token: ${{ secrets.CODECOV_TOKEN }}
+            files: packages/*/coverage/lcov.info
