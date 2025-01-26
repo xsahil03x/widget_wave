@@ -1,0 +1,25 @@
+name: flutter_svg_icon_example
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg_icon:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/ic_reaction_lol.svg
+    - assets/ic_reaction_love.svg
+    - assets/ic_reaction_thumbs_down.svg
+    - assets/ic_reaction_thumbs_up.svg
+    - assets/ic_reaction_wut.svg
