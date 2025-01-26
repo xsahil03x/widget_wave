@@ -11,7 +11,7 @@ A Flutter package that provides a simple way to use SVG icons in your Flutter ap
 **Show some ❤️ and star the repo to support the project**
 
 <p>
-  <img src="https://github.com/xsahil03x/widget_wave/blob/main/packages/flutter_svg_icon/assets/showcase.png" alt="A showcase of FlutterSvgIcon" height="400"/>
+  <img src="https://github.com/xsahil03x/widget_wave/blob/main/packages/flutter_svg_icon/assets/showcase.png" alt="A showcase of FlutterSvgIcon" height="700"/>
 </p>
 
 ## Features
