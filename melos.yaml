@@ -18,6 +18,7 @@ command:
 
   version:
     branch: main
+    releaseUrl: true
     linkToCommits: true
     workspaceChangelog: true
 
