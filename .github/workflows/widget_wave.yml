@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        # super important if you want to see all results, even if one fails.
+        fail-fast: false
         flutter-version:
           # The version of Flutter to use should use the minimum Dart SDK version supported by the package,
           # refer to https://docs.flutter.dev/development/tools/sdk/releases.
