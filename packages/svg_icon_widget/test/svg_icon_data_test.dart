@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_svg_icon/src/svg_icon_data.dart';
+import 'package:svg_icon_widget/src/svg_icon_data.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

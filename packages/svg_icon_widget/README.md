@@ -1,9 +1,9 @@
-# Flutter SVG Icon
+# SVG Icon Widget
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xsahil03x/widget_wave/blob/main/packages/flutter_svg_icon/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xsahil03x/widget_wave/blob/main/packages/svg_icon_widget/LICENSE)
 [![Dart CI](https://github.com/xsahil03x/widget_wave/workflows/widget_wave/badge.svg)](https://github.com/xsahil03x/widget_wave/actions)
-[![Version](https://img.shields.io/pub/v/flutter_svg_icon.svg)](https://pub.dartlang.org/packages/flutter_svg_icon)
+[![Version](https://img.shields.io/pub/v/svg_icon_widget.svg)](https://pub.dartlang.org/packages/svg_icon_widget)
 
 A Flutter package that provides a simple way to use SVG icons in your Flutter app. It wraps the
 [flutter_svg](https://pub.dev/packages/flutter_svg) package to provide a more convenient way to use SVG icons.
@@ -11,7 +11,7 @@ A Flutter package that provides a simple way to use SVG icons in your Flutter ap
 **Show some ❤️ and star the repo to support the project**
 
 <p>
-  <img src="https://github.com/xsahil03x/widget_wave/blob/main/packages/flutter_svg_icon/assets/showcase.png" alt="A showcase of FlutterSvgIcon" height="700"/>
+  <img src="https://github.com/xsahil03x/widget_wave/blob/main/packages/svg_icon_widget/assets/showcase.png" alt="A showcase of FlutterSvgIcon" height="700"/>
 </p>
 
 ## Features
@@ -27,7 +27,7 @@ Add the following to your  `pubspec.yaml`  and replace  `[version]`  with the la
 
 ```yaml
 dependencies:
-  flutter_svg_icon: ^[version]
+  svg_icon_widget: ^[version]
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ dependencies:
 To get started, import the package:
 
 ```dart
-import 'package:flutter_svg_icon/flutter_svg_icon.dart';
+import 'package:svg_icon_widget/svg_icon_widget.dart';
 ```
 
 Then, create the `SvgIconData` object with the SVG icon data:
