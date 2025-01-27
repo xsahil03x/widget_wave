@@ -12,7 +12,7 @@ A collection of small Flutter packages that provide various UI widgets and utili
 
 | Package                                       | Version                                                                                                             | Description                                                                       |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [flutter_svg_icon](packages/flutter_svg_icon) | [![Version](https://img.shields.io/pub/v/flutter_svg_icon.svg)](https://pub.dartlang.org/packages/flutter_svg_icon) | A Flutter package that provides a simple way to use SVG icons in your Flutter app |
+| [svg_icon_widget](packages/svg_icon_widget) | [![Version](https://img.shields.io/pub/v/svg_icon_widget.svg)](https://pub.dartlang.org/packages/svg_icon_widget) | A Flutter package that provides a simple way to use SVG icons in your Flutter app |
 
 ## Maintainers
 

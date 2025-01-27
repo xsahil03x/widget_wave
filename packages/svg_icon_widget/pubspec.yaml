@@ -1,0 +1,30 @@
+name: svg_icon_widget
+description: A Flutter package that provides a simple way to use SVG icons in your Flutter app.
+version: 0.0.1
+homepage: https://github.com/xsahil03x/widget_wave/tree/main/packages/svg_icon_widget
+repository: https://github.com/xsahil03x/widget_wave/tree/main/packages/svg_icon_widget
+issue_tracker: https://github.com/xsahil03x/widget_wave/issues
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.17
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+topics:
+  - svg
+  - icon
+  - svg-icon
+  - flutter-svg
+  - flutter-icon
+
+screenshots:
+  - description: 'SVG Icon Widget Showcase'
+    path: assets/showcase.png

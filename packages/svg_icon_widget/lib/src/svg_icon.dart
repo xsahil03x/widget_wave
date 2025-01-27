@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_svg_icon/src/svg_icon_data.dart';
+import 'package:svg_icon_widget/src/svg_icon_data.dart';
 
 /// A icon widget drawn from a provided SVG asset described in an [SvgIconData].
 ///

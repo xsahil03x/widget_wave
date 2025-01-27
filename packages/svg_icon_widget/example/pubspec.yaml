@@ -1,4 +1,4 @@
-name: flutter_svg_icon_example
+name: svg_icon_widget_example
 description: "A new Flutter project."
 publish_to: 'none'
 version: 1.0.0+1
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg_icon:
+  svg_icon_widget:
     path: ../
 
 dev_dependencies:
