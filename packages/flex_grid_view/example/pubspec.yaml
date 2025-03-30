@@ -1,0 +1,17 @@
+name: flex_grid_view_example
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flex_grid_view:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

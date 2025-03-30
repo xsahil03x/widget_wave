@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flex_grid/src/matrix.dart';
+import 'package:flex_grid_view/src/matrix.dart';
 
 void main() {
   group('MatrixExtension', () {

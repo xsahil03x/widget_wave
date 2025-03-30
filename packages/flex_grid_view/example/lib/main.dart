@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flex_grid/flex_grid.dart';
+import 'package:flex_grid_view/flex_grid_view.dart';
 
 void main() {
   runApp(const MyApp());

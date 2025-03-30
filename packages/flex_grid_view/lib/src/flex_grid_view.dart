@@ -1,4 +1,4 @@
-import 'package:flex_grid/src/matrix.dart';
+import 'package:flex_grid_view/src/matrix.dart';
 import 'package:flutter/material.dart';
 
 /// Signature for a function that builds a widget for the overlay of the last

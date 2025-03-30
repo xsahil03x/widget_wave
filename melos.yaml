@@ -3,7 +3,7 @@ repository: https://github.com/xsahil03x/widget_wave
 
 packages:
   - packages/svg_icon_widget
-  - packages/flex_grid
+  - packages/flex_grid_view
 
 command:
   bootstrap:

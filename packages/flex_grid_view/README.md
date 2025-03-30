@@ -1,16 +1,16 @@
-# FlexGrid
+# FlexGridView
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xsahil03x/widget_wave/blob/main/packages/flex_grid/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xsahil03x/widget_wave/blob/main/packages/flex_grid_view/LICENSE)
 [![Dart CI](https://github.com/xsahil03x/widget_wave/workflows/widget_wave/badge.svg)](https://github.com/xsahil03x/widget_wave/actions)
-[![Version](https://img.shields.io/pub/v/flex_grid.svg)](https://pub.dartlang.org/packages/flex_grid)
+[![Version](https://img.shields.io/pub/v/flex_grid_view.svg)](https://pub.dartlang.org/packages/flex_grid_view)
 
 A Flutter package that provides a flexible grid widget that arranges its children based on a provided pattern.
 
 **Show some ❤️ and star the repo to support the project**
 
 <p>
-  <img src="https://github.com/xsahil03x/widget_wave/blob/main/packages/flex_grid/assets/showcase.png?raw=true" alt="A showcase of FlexGrid" height="700"/>
+  <img src="https://github.com/xsahil03x/widget_wave/blob/main/packages/flex_grid_view/assets/showcase.png?raw=true" alt="A showcase of FlexGrid" height="700"/>
 </p>
 
 ## Features
@@ -28,7 +28,7 @@ Add the following to your `pubspec.yaml` and replace `[version]` with the latest
 
 ```yaml
 dependencies:
-  flex_grid: ^[version]
+  flex_grid_view: ^[version]
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ dependencies:
 To get started, import the package:
 
 ```dart
-import 'package:flex_grid/flex_grid.dart';
+import 'package:flex_grid_view/flex_grid_view.dart';
 ```
 
 ### Basic grid with equal cells
@@ -98,7 +98,6 @@ FlexGrid(
   pattern: const [
     [1, 1],
     [1, 1],
-    [1, 1],
   ],
   children: [
     Container(color: Colors.red),
@@ -114,6 +113,19 @@ FlexGrid(
   ),
 )
 ```
+
+## Parameters
+
+| Parameter      | Description                                               | Default  |
+|----------------|-----------------------------------------------------------|----------|
+| pattern        | Matrix representing the flex values for each cell         | Required |
+| children       | List of widgets to display in the grid                    | Required |
+| runPattern     | List of flex factors for row heights                      | null     |
+| reverse        | Whether to reverse the primary direction of the grid      | false    |
+| maxChildren    | Maximum number of children to display                     | null     |
+| overlayBuilder | Builder for overlay on last child when exceeding maxChildren | null     |
+| spacing        | Space between children in the main axis                   | 2.0      |
+| runSpacing     | Space between runs in the cross axis                      | 2.0      |
 
 ## License
 

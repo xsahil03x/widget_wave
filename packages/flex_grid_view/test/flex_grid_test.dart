@@ -1,7 +1,7 @@
 import 'package:alchemist/alchemist.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flex_grid/flex_grid.dart';
+import 'package:flex_grid_view/flex_grid_view.dart';
 
 void main() {
   group('Widget Tests', () {
