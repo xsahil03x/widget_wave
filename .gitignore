@@ -44,6 +44,11 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Non-CI golden files and failures
+**/test/**/goldens/**/*.*
+**/test/**/failures/**/*.*
+!**/test/**/goldens/ci/*.*
+
 # Exceptions to the above rules
 !/pubspec.lock
 !**/example/pubspec.lock
