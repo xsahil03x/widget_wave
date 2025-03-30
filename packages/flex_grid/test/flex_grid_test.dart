@@ -330,11 +330,11 @@ void main() {
               maxChildren: 3,
               overlayBuilder: (context, remaining) => Center(
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    color: Colors.black38,
                     shape: BoxShape.circle,
                   ),
-                  padding: const EdgeInsets.all(8),
                   child: Text(
                     '+$remaining',
                     style: const TextStyle(

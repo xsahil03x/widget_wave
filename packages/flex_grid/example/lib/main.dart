@@ -103,7 +103,7 @@ class HomePage extends StatelessWidget {
                 return Container(
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.3),
+                    color: Colors.black38,
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
