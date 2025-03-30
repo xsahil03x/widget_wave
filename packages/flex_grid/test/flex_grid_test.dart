@@ -4,11 +4,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flex_grid/flex_grid.dart';
 
 void main() {
-  // Set up Alchemist for golden tests
-  setUpAll(() {
-    // Initialize Alchemist
-  });
-
   group('Widget Tests', () {
     testWidgets('FlexGrid renders with correct pattern',
         (WidgetTester tester) async {
