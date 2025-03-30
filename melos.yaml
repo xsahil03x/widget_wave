@@ -3,6 +3,7 @@ repository: https://github.com/xsahil03x/widget_wave
 
 packages:
   - packages/svg_icon_widget
+  - packages/flex_grid_view
 
 command:
   bootstrap:
@@ -15,6 +16,7 @@ command:
 
     dev_dependencies:
       flutter_lints: ^4.0.0
+      alchemist: ^0.11.0
 
   version:
     branch: main

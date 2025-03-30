@@ -1,0 +1,26 @@
+name: flex_grid_view
+description: A Flutter package that provides a flexible grid widget that arranges its children based on a provided pattern.
+version: 0.1.0
+homepage: https://github.com/xsahil03x/widget_wave/tree/main/packages/flex_grid_view
+repository: https://github.com/xsahil03x/widget_wave/tree/main/packages/flex_grid_view
+issue_tracker: https://github.com/xsahil03x/widget_wave/issues
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  alchemist: ^0.11.0
+
+topics:
+  - grid
+  - flex
+  - flexible-grid
+  - flex-grid
+  - flutter-grid
