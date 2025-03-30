@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2025-03-30
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`flex_grid_view` - `v0.1.0+1`](#flex_grid_view---v0101)
+
+---
+
+#### `flex_grid_view` - `v0.1.0+1`
+
+ - feat: add screenshot to pubspec.yaml
+
+
 ## 2025-01-27
 
 ### Changes
