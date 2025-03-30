@@ -9,7 +9,7 @@ void main() {
         [4, 5],
         [6, 7, 8, 9],
       ];
-      
+
       expect(matrix.count, 9);
     });
 
@@ -24,7 +24,7 @@ void main() {
         [4, 5],
         [6, 7, 8, 9],
       ];
-      
+
       final result = matrix.takeItems(5);
       expect(result, [
         [1, 2, 3],
@@ -38,7 +38,7 @@ void main() {
         [1, 2],
         [3, 4],
       ];
-      
+
       final result = matrix.takeItems(10);
       expect(result, matrix);
       expect(result.count, 4);
@@ -49,7 +49,7 @@ void main() {
         [1, 2],
         [3, 4],
       ];
-      
+
       final result = matrix.takeItems(0);
       expect(result, []);
       expect(result.count, 0);
@@ -60,13 +60,13 @@ void main() {
         [1, 2],
         [3, 4],
       ];
-      
+
       final result = matrix.mapCell((index, cell) => '$index:$cell');
-      
+
       expect(result, [
         ['0:1', '1:2'],
         ['2:3', '3:4'],
       ]);
     });
   });
-} 
+}
