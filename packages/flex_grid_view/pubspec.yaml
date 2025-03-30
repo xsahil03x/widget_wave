@@ -24,3 +24,7 @@ topics:
   - flexible-grid
   - flex-grid
   - flutter-grid
+
+screenshots:
+  - description: 'Flex Grid View Showcase'
+    path: assets/showcase.png
